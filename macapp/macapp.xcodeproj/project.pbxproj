@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A061D69420F49D1700B07859 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A061D69320F49D1700B07859 /* main.cpp */; };
+		A061D69E20F49E6800B07859 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D69D20F49E6800B07859 /* Cocoa.framework */; };
+		A061D6A020F49E7400B07859 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D69F20F49E7400B07859 /* CoreVideo.framework */; };
+		A061D6A220F49E7D00B07859 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6A120F49E7D00B07859 /* OpenGL.framework */; };
+		A061D6A420F49E8500B07859 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6A320F49E8500B07859 /* IOKit.framework */; };
+		A061D6A620F49E8D00B07859 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6A520F49E8D00B07859 /* Carbon.framework */; };
+		A061D6A820F49ECE00B07859 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6A720F49ECE00B07859 /* libglfw3.a */; };
+		A061D70820F4A4BA00B07859 /* liblibCEGUIOpenGLRender_nx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6F520F4A43600B07859 /* liblibCEGUIOpenGLRender_nx.a */; };
+		A061D70920F4A4BF00B07859 /* liblibGlew_nx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6D920F4A43600B07859 /* liblibGlew_nx.a */; };
+		A061D70A20F4A4C500B07859 /* libnxeventsys.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6EB20F4A43600B07859 /* libnxeventsys.a */; };
+		A061D70B20F4A4CC00B07859 /* libeventsyscore-nxbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6E720F4A43600B07859 /* libeventsyscore-nxbase.a */; };
+		A061D70C20F4A4D200B07859 /* libcommonlib-nxbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6E320F4A43600B07859 /* libcommonlib-nxbase.a */; };
+		A061D70D20F4A4E400B07859 /* liblibprotobuf-navi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6DB20F4A43600B07859 /* liblibprotobuf-navi.a */; };
+		A061D70E20F4A4EB00B07859 /* libnxeventfactory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6E920F4A43600B07859 /* libnxeventfactory.a */; };
+		A061D70F20F4A4F500B07859 /* libnxprotosrc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6E120F4A43600B07859 /* libnxprotosrc.a */; };
+		A061D71020F4A50200B07859 /* liblibnxceguiext.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6F920F4A43600B07859 /* liblibnxceguiext.a */; };
+		A061D71120F4A50C00B07859 /* libzeromq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6DD20F4A43600B07859 /* libzeromq.a */; };
+		A061D71220F4A51200B07859 /* libnxbaseprotosrc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6E520F4A43600B07859 /* libnxbaseprotosrc.a */; };
+		A061D71320F4A51700B07859 /* liblibz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6D720F4A43600B07859 /* liblibz.a */; };
+		A061D71420F4A51D00B07859 /* liblibnxmemtracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6DF20F4A43600B07859 /* liblibnxmemtracker.a */; };
+		A061D71520F4A52300B07859 /* liblibnxceguilog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6FD20F4A43600B07859 /* liblibnxceguilog.a */; };
+		A061D71620F4A52A00B07859 /* liblibnxceguiextcb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6FB20F4A43600B07859 /* liblibnxceguiextcb.a */; };
+		A061D71720F4A53300B07859 /* liblibnxAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6F720F4A43600B07859 /* liblibnxAnimation.a */; };
+		A061D71820F4A53900B07859 /* liblibminizip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6D520F4A43600B07859 /* liblibminizip.a */; };
+		A061D71920F4A54100B07859 /* liblibft2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6D320F4A43600B07859 /* liblibft2.a */; };
+		A061D71A20F4A55000B07859 /* liblibFribidi_nx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6CF20F4A43600B07859 /* liblibFribidi_nx.a */; };
+		A061D71B20F4A55700B07859 /* liblibfreetype-cegui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6D120F4A43600B07859 /* liblibfreetype-cegui.a */; };
+		A061D71D20F4A56400B07859 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D71C20F4A56300B07859 /* libiconv.tbd */; };
+		A061D71E20F4A56B00B07859 /* liblibFreeImage_nx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6CD20F4A43600B07859 /* liblibFreeImage_nx.a */; };
+		A061D71F20F4A57100B07859 /* liblibCEGuiBase_nx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6ED20F4A43600B07859 /* liblibCEGuiBase_nx.a */; };
+		A061D72020F4A57700B07859 /* liblibCEGUILibXMLParser_nx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6F320F4A43600B07859 /* liblibCEGUILibXMLParser_nx.a */; };
+		A061D72120F4A57E00B07859 /* liblibnxappcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6FF20F4A43600B07859 /* liblibnxappcore.a */; };
+		A061D72220F4A58600B07859 /* liblibCEGUIFreeImageImageCodec_nx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6F120F4A43600B07859 /* liblibCEGUIFreeImageImageCodec_nx.a */; };
+		A061D72320F4A58C00B07859 /* liblibCEGUICoreWindowRendererSet_nx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D6EF20F4A43600B07859 /* liblibCEGUICoreWindowRendererSet_nx.a */; };
+		A061D72420F4A59300B07859 /* liblibsketchcomponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D70320F4A43600B07859 /* liblibsketchcomponent.a */; };
+		A061D72520F4A59800B07859 /* libsketchpreview.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D70720F4A43600B07859 /* libsketchpreview.a */; };
+		A061D72720F4A5AE00B07859 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A061D72620F4A5AE00B07859 /* QuartzCore.framework */; };
+		A061D75320F4D33E00B07859 /* CEGUIView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A061D73120F4D33E00B07859 /* CEGUIView.cpp */; };
+		A061D78C20F59D5E00B07859 /* Core in CopyFiles */ = {isa = PBXBuildFile; fileRef = A061D72920F4A78F00B07859 /* Core */; };
+		A061D78E20F5B3EE00B07859 /* CEGUIEventReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A061D78D20F5B3EE00B07859 /* CEGUIEventReceiver.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A061D6CC20F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A34AD045ED984107B6D7DA60;
+			remoteInfo = libFreeImage_nx;
+		};
+		A061D6CE20F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 856CF280AB204771A4975427;
+			remoteInfo = libFribidi_nx;
+		};
+		A061D6D020F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1DF51053125C45209DB8AE68;
+			remoteInfo = "libfreetype-cegui";
+		};
+		A061D6D220F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 307E6041C7264D4EB0E49DE9;
+			remoteInfo = libft2;
+		};
+		A061D6D420F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D28531CED8648C58397043F;
+			remoteInfo = libminizip;
+		};
+		A061D6D620F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5E2DE4A72CF04EA8804F6277;
+			remoteInfo = libz;
+		};
+		A061D6D820F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E3A08FB8A5E844BD879B56C3;
+			remoteInfo = libGlew_nx;
+		};
+		A061D6DA20F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CF311F0B67A64F04A7086A82;
+			remoteInfo = "libprotobuf-navi";
+		};
+		A061D6DC20F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DDFAEBA21254394B8501338;
+			remoteInfo = zeromq;
+		};
+		A061D6DE20F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D7C647BC363E44F1A44E2E0E;
+			remoteInfo = libnxmemtracker;
+		};
+		A061D6E020F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0EC38F7D11A479685E3C562;
+			remoteInfo = nxprotosrc;
+		};
+		A061D6E220F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7571A42E3F4F4040B5E70289;
+			remoteInfo = "commonlib-nxbase";
+		};
+		A061D6E420F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E09C8DDE654E4773A8264214;
+			remoteInfo = nxbaseprotosrc;
+		};
+		A061D6E620F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C587AED8EF6D470D962E813A;
+			remoteInfo = "eventsyscore-nxbase";
+		};
+		A061D6E820F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57ABFB7A25F949CFBA288F87;
+			remoteInfo = nxeventfactory;
+		};
+		A061D6EA20F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 23C5FB16B63D43A2851171F1;
+			remoteInfo = nxeventsys;
+		};
+		A061D6EC20F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E313E6D04CCD4ED6BD2A19F6;
+			remoteInfo = libCEGuiBase_nx;
+		};
+		A061D6EE20F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F9A69019A2D148B2AC6AD2F3;
+			remoteInfo = libCEGUICoreWindowRendererSet_nx;
+		};
+		A061D6F020F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 551D77985F634E4EBDF082E0;
+			remoteInfo = libCEGUIFreeImageImageCodec_nx;
+		};
+		A061D6F220F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E708ED252673485D9B9260AF;
+			remoteInfo = libCEGUILibXMLParser_nx;
+		};
+		A061D6F420F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D90C70180980431C9D261C0A;
+			remoteInfo = libCEGUIOpenGLRender_nx;
+		};
+		A061D6F620F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 13843A0025DA4E2793F1A0D4;
+			remoteInfo = libnxAnimation;
+		};
+		A061D6F820F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 10D48BC3EDB64064BB1B6D56;
+			remoteInfo = libnxceguiext;
+		};
+		A061D6FA20F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9023E5D452614209AB3E98D5;
+			remoteInfo = libnxceguiextcb;
+		};
+		A061D6FC20F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AB852EED11414E97BDAFF6BC;
+			remoteInfo = libnxceguilog;
+		};
+		A061D6FE20F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 650F2263EA5347089697F465;
+			remoteInfo = libnxappcore;
+		};
+		A061D70020F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17188FB2B77149BCB8A5D2E1;
+			remoteInfo = sketchmain;
+		};
+		A061D70220F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFEC6B6885C34EFD89767C8A;
+			remoteInfo = libsketchcomponent;
+		};
+		A061D70420F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32CA1E0E52BD4079A40A2545;
+			remoteInfo = libsketchui;
+		};
+		A061D70620F4A43600B07859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7E6CDBFE10DD4E1BB3902E9A;
+			remoteInfo = sketchpreview;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A061D68E20F49D1700B07859 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				A061D78C20F59D5E00B07859 /* Core in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A061D69020F49D1700B07859 /* macapp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = macapp; sourceTree = BUILT_PRODUCTS_DIR; };
+		A061D69320F49D1700B07859 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A061D69B20F49DD100B07859 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = macapp/lib/libglfw3.a; sourceTree = "<group>"; };
+		A061D69D20F49E6800B07859 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A061D69F20F49E7400B07859 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A061D6A120F49E7D00B07859 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		A061D6A320F49E8500B07859 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		A061D6A520F49E8D00B07859 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		A061D6A720F49ECE00B07859 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = lib/libglfw3.a; sourceTree = "<group>"; };
+		A061D6A920F4A43600B07859 /* Project.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Project.xcodeproj; path = ../out/Project.xcodeproj; sourceTree = "<group>"; };
+		A061D71C20F4A56300B07859 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		A061D72620F4A5AE00B07859 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A061D72920F4A78F00B07859 /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Core; path = ../nxfw/nxResource/Core; sourceTree = "<group>"; };
+		A061D72B20F4A89F00B07859 /* CEGUIEventReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEGUIEventReceiver.h; sourceTree = "<group>"; };
+		A061D73120F4D33E00B07859 /* CEGUIView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CEGUIView.cpp; sourceTree = "<group>"; };
+		A061D75220F4D33E00B07859 /* CEGUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEGUIView.h; sourceTree = "<group>"; };
+		A061D78D20F5B3EE00B07859 /* CEGUIEventReceiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CEGUIEventReceiver.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A061D68D20F49D1700B07859 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A061D72720F4A5AE00B07859 /* QuartzCore.framework in Frameworks */,
+				A061D6A220F49E7D00B07859 /* OpenGL.framework in Frameworks */,
+				A061D72520F4A59800B07859 /* libsketchpreview.a in Frameworks */,
+				A061D72420F4A59300B07859 /* liblibsketchcomponent.a in Frameworks */,
+				A061D72320F4A58C00B07859 /* liblibCEGUICoreWindowRendererSet_nx.a in Frameworks */,
+				A061D72220F4A58600B07859 /* liblibCEGUIFreeImageImageCodec_nx.a in Frameworks */,
+				A061D72120F4A57E00B07859 /* liblibnxappcore.a in Frameworks */,
+				A061D72020F4A57700B07859 /* liblibCEGUILibXMLParser_nx.a in Frameworks */,
+				A061D71F20F4A57100B07859 /* liblibCEGuiBase_nx.a in Frameworks */,
+				A061D71E20F4A56B00B07859 /* liblibFreeImage_nx.a in Frameworks */,
+				A061D71D20F4A56400B07859 /* libiconv.tbd in Frameworks */,
+				A061D71B20F4A55700B07859 /* liblibfreetype-cegui.a in Frameworks */,
+				A061D71A20F4A55000B07859 /* liblibFribidi_nx.a in Frameworks */,
+				A061D71920F4A54100B07859 /* liblibft2.a in Frameworks */,
+				A061D71820F4A53900B07859 /* liblibminizip.a in Frameworks */,
+				A061D71720F4A53300B07859 /* liblibnxAnimation.a in Frameworks */,
+				A061D71620F4A52A00B07859 /* liblibnxceguiextcb.a in Frameworks */,
+				A061D71520F4A52300B07859 /* liblibnxceguilog.a in Frameworks */,
+				A061D71420F4A51D00B07859 /* liblibnxmemtracker.a in Frameworks */,
+				A061D71320F4A51700B07859 /* liblibz.a in Frameworks */,
+				A061D71220F4A51200B07859 /* libnxbaseprotosrc.a in Frameworks */,
+				A061D71120F4A50C00B07859 /* libzeromq.a in Frameworks */,
+				A061D71020F4A50200B07859 /* liblibnxceguiext.a in Frameworks */,
+				A061D70F20F4A4F500B07859 /* libnxprotosrc.a in Frameworks */,
+				A061D70E20F4A4EB00B07859 /* libnxeventfactory.a in Frameworks */,
+				A061D70D20F4A4E400B07859 /* liblibprotobuf-navi.a in Frameworks */,
+				A061D70C20F4A4D200B07859 /* libcommonlib-nxbase.a in Frameworks */,
+				A061D70B20F4A4CC00B07859 /* libeventsyscore-nxbase.a in Frameworks */,
+				A061D70A20F4A4C500B07859 /* libnxeventsys.a in Frameworks */,
+				A061D70920F4A4BF00B07859 /* liblibGlew_nx.a in Frameworks */,
+				A061D70820F4A4BA00B07859 /* liblibCEGUIOpenGLRender_nx.a in Frameworks */,
+				A061D6A820F49ECE00B07859 /* libglfw3.a in Frameworks */,
+				A061D6A620F49E8D00B07859 /* Carbon.framework in Frameworks */,
+				A061D6A420F49E8500B07859 /* IOKit.framework in Frameworks */,
+				A061D6A020F49E7400B07859 /* CoreVideo.framework in Frameworks */,
+				A061D69E20F49E6800B07859 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A061D68720F49D1700B07859 = {
+			isa = PBXGroup;
+			children = (
+				A061D72920F4A78F00B07859 /* Core */,
+				A061D6A920F4A43600B07859 /* Project.xcodeproj */,
+				A061D69220F49D1700B07859 /* macapp */,
+				A061D69120F49D1700B07859 /* Products */,
+				A061D69A20F49DD000B07859 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A061D69120F49D1700B07859 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A061D69020F49D1700B07859 /* macapp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A061D69220F49D1700B07859 /* macapp */ = {
+			isa = PBXGroup;
+			children = (
+				A061D72A20F4A89F00B07859 /* CEGUI */,
+				A061D73120F4D33E00B07859 /* CEGUIView.cpp */,
+				A061D75220F4D33E00B07859 /* CEGUIView.h */,
+				A061D69320F49D1700B07859 /* main.cpp */,
+			);
+			path = macapp;
+			sourceTree = "<group>";
+		};
+		A061D69A20F49DD000B07859 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A061D72620F4A5AE00B07859 /* QuartzCore.framework */,
+				A061D71C20F4A56300B07859 /* libiconv.tbd */,
+				A061D6A720F49ECE00B07859 /* libglfw3.a */,
+				A061D6A520F49E8D00B07859 /* Carbon.framework */,
+				A061D6A320F49E8500B07859 /* IOKit.framework */,
+				A061D6A120F49E7D00B07859 /* OpenGL.framework */,
+				A061D69F20F49E7400B07859 /* CoreVideo.framework */,
+				A061D69D20F49E6800B07859 /* Cocoa.framework */,
+				A061D69B20F49DD100B07859 /* libglfw3.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A061D6AA20F4A43600B07859 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A061D6CD20F4A43600B07859 /* liblibFreeImage_nx.a */,
+				A061D6CF20F4A43600B07859 /* liblibFribidi_nx.a */,
+				A061D6D120F4A43600B07859 /* liblibfreetype-cegui.a */,
+				A061D6D320F4A43600B07859 /* liblibft2.a */,
+				A061D6D520F4A43600B07859 /* liblibminizip.a */,
+				A061D6D720F4A43600B07859 /* liblibz.a */,
+				A061D6D920F4A43600B07859 /* liblibGlew_nx.a */,
+				A061D6DB20F4A43600B07859 /* liblibprotobuf-navi.a */,
+				A061D6DD20F4A43600B07859 /* libzeromq.a */,
+				A061D6DF20F4A43600B07859 /* liblibnxmemtracker.a */,
+				A061D6E120F4A43600B07859 /* libnxprotosrc.a */,
+				A061D6E320F4A43600B07859 /* libcommonlib-nxbase.a */,
+				A061D6E520F4A43600B07859 /* libnxbaseprotosrc.a */,
+				A061D6E720F4A43600B07859 /* libeventsyscore-nxbase.a */,
+				A061D6E920F4A43600B07859 /* libnxeventfactory.a */,
+				A061D6EB20F4A43600B07859 /* libnxeventsys.a */,
+				A061D6ED20F4A43600B07859 /* liblibCEGuiBase_nx.a */,
+				A061D6EF20F4A43600B07859 /* liblibCEGUICoreWindowRendererSet_nx.a */,
+				A061D6F120F4A43600B07859 /* liblibCEGUIFreeImageImageCodec_nx.a */,
+				A061D6F320F4A43600B07859 /* liblibCEGUILibXMLParser_nx.a */,
+				A061D6F520F4A43600B07859 /* liblibCEGUIOpenGLRender_nx.a */,
+				A061D6F720F4A43600B07859 /* liblibnxAnimation.a */,
+				A061D6F920F4A43600B07859 /* liblibnxceguiext.a */,
+				A061D6FB20F4A43600B07859 /* liblibnxceguiextcb.a */,
+				A061D6FD20F4A43600B07859 /* liblibnxceguilog.a */,
+				A061D6FF20F4A43600B07859 /* liblibnxappcore.a */,
+				A061D70120F4A43600B07859 /* libsketchmain.a */,
+				A061D70320F4A43600B07859 /* liblibsketchcomponent.a */,
+				A061D70520F4A43600B07859 /* liblibsketchui.a */,
+				A061D70720F4A43600B07859 /* libsketchpreview.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A061D72A20F4A89F00B07859 /* CEGUI */ = {
+			isa = PBXGroup;
+			children = (
+				A061D78D20F5B3EE00B07859 /* CEGUIEventReceiver.cpp */,
+				A061D72B20F4A89F00B07859 /* CEGUIEventReceiver.h */,
+			);
+			path = CEGUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A061D68F20F49D1700B07859 /* macapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A061D69720F49D1700B07859 /* Build configuration list for PBXNativeTarget "macapp" */;
+			buildPhases = (
+				A061D68C20F49D1700B07859 /* Sources */,
+				A061D68D20F49D1700B07859 /* Frameworks */,
+				A061D68E20F49D1700B07859 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macapp;
+			productName = macapp;
+			productReference = A061D69020F49D1700B07859 /* macapp */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A061D68820F49D1700B07859 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = caoyulu;
+				TargetAttributes = {
+					A061D68F20F49D1700B07859 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = A061D68B20F49D1700B07859 /* Build configuration list for PBXProject "macapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A061D68720F49D1700B07859;
+			productRefGroup = A061D69120F49D1700B07859 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A061D6AA20F4A43600B07859 /* Products */;
+					ProjectRef = A061D6A920F4A43600B07859 /* Project.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A061D68F20F49D1700B07859 /* macapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A061D6CD20F4A43600B07859 /* liblibFreeImage_nx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibFreeImage_nx.a;
+			remoteRef = A061D6CC20F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6CF20F4A43600B07859 /* liblibFribidi_nx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibFribidi_nx.a;
+			remoteRef = A061D6CE20F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6D120F4A43600B07859 /* liblibfreetype-cegui.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "liblibfreetype-cegui.a";
+			remoteRef = A061D6D020F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6D320F4A43600B07859 /* liblibft2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibft2.a;
+			remoteRef = A061D6D220F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6D520F4A43600B07859 /* liblibminizip.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibminizip.a;
+			remoteRef = A061D6D420F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6D720F4A43600B07859 /* liblibz.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibz.a;
+			remoteRef = A061D6D620F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6D920F4A43600B07859 /* liblibGlew_nx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibGlew_nx.a;
+			remoteRef = A061D6D820F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6DB20F4A43600B07859 /* liblibprotobuf-navi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "liblibprotobuf-navi.a";
+			remoteRef = A061D6DA20F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6DD20F4A43600B07859 /* libzeromq.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libzeromq.a;
+			remoteRef = A061D6DC20F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6DF20F4A43600B07859 /* liblibnxmemtracker.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibnxmemtracker.a;
+			remoteRef = A061D6DE20F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6E120F4A43600B07859 /* libnxprotosrc.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libnxprotosrc.a;
+			remoteRef = A061D6E020F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6E320F4A43600B07859 /* libcommonlib-nxbase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcommonlib-nxbase.a";
+			remoteRef = A061D6E220F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6E520F4A43600B07859 /* libnxbaseprotosrc.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libnxbaseprotosrc.a;
+			remoteRef = A061D6E420F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6E720F4A43600B07859 /* libeventsyscore-nxbase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libeventsyscore-nxbase.a";
+			remoteRef = A061D6E620F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6E920F4A43600B07859 /* libnxeventfactory.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libnxeventfactory.a;
+			remoteRef = A061D6E820F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6EB20F4A43600B07859 /* libnxeventsys.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libnxeventsys.a;
+			remoteRef = A061D6EA20F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6ED20F4A43600B07859 /* liblibCEGuiBase_nx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibCEGuiBase_nx.a;
+			remoteRef = A061D6EC20F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6EF20F4A43600B07859 /* liblibCEGUICoreWindowRendererSet_nx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibCEGUICoreWindowRendererSet_nx.a;
+			remoteRef = A061D6EE20F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6F120F4A43600B07859 /* liblibCEGUIFreeImageImageCodec_nx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibCEGUIFreeImageImageCodec_nx.a;
+			remoteRef = A061D6F020F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6F320F4A43600B07859 /* liblibCEGUILibXMLParser_nx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibCEGUILibXMLParser_nx.a;
+			remoteRef = A061D6F220F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6F520F4A43600B07859 /* liblibCEGUIOpenGLRender_nx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibCEGUIOpenGLRender_nx.a;
+			remoteRef = A061D6F420F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6F720F4A43600B07859 /* liblibnxAnimation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibnxAnimation.a;
+			remoteRef = A061D6F620F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6F920F4A43600B07859 /* liblibnxceguiext.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibnxceguiext.a;
+			remoteRef = A061D6F820F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6FB20F4A43600B07859 /* liblibnxceguiextcb.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibnxceguiextcb.a;
+			remoteRef = A061D6FA20F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6FD20F4A43600B07859 /* liblibnxceguilog.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibnxceguilog.a;
+			remoteRef = A061D6FC20F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D6FF20F4A43600B07859 /* liblibnxappcore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibnxappcore.a;
+			remoteRef = A061D6FE20F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D70120F4A43600B07859 /* libsketchmain.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsketchmain.a;
+			remoteRef = A061D70020F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D70320F4A43600B07859 /* liblibsketchcomponent.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibsketchcomponent.a;
+			remoteRef = A061D70220F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D70520F4A43600B07859 /* liblibsketchui.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibsketchui.a;
+			remoteRef = A061D70420F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A061D70720F4A43600B07859 /* libsketchpreview.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsketchpreview.a;
+			remoteRef = A061D70620F4A43600B07859 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A061D68C20F49D1700B07859 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A061D78E20F5B3EE00B07859 /* CEGUIEventReceiver.cpp in Sources */,
+				A061D69420F49D1700B07859 /* main.cpp in Sources */,
+				A061D75320F4D33E00B07859 /* CEGUIView.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A061D69520F49D1700B07859 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A061D69620F49D1700B07859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A061D69820F49D1700B07859 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/include/",
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/../nxbase/nxEventSys/eventcore/include/",
+					"$(SRCROOT)/../cegui/CEGUIBase/include/",
+					"$(SRCROOT)/../nxbase/eventsyscore/include/",
+					"$(SRCROOT)/../externals/protobuf/src/",
+					"$(SRCROOT)/../nxbase/commonlib/include/",
+					"$(SRCROOT)/../out/include/",
+					"$(SRCROOT)/../nxfw/nxCEGUIExt/include/",
+					"$(SRCROOT)/../nxfw/nxAppmain/include/",
+					"$(SRCROOT)/../nxfw/SketchUI/Preview/",
+					"$(SRCROOT)/../nxfw/nxAppmain/ui/",
+					"$(SRCROOT)/../nxfw/nxExternalAPI/include/base/",
+					"$(SRCROOT)/../nxfw/nxExternalAPI/include/",
+					"$(SRCROOT)/../cegui/CEGUIOpenGLRender/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/macapp/lib",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A061D69920F49D1700B07859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/include/",
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/../nxbase/nxEventSys/eventcore/include/",
+					"$(SRCROOT)/../cegui/CEGUIBase/include/",
+					"$(SRCROOT)/../nxbase/eventsyscore/include/",
+					"$(SRCROOT)/../externals/protobuf/src/",
+					"$(SRCROOT)/../nxbase/commonlib/include/",
+					"$(SRCROOT)/../out/include/",
+					"$(SRCROOT)/../nxfw/nxCEGUIExt/include/",
+					"$(SRCROOT)/../nxfw/nxAppmain/include/",
+					"$(SRCROOT)/../nxfw/SketchUI/Preview/",
+					"$(SRCROOT)/../nxfw/nxAppmain/ui/",
+					"$(SRCROOT)/../nxfw/nxExternalAPI/include/base/",
+					"$(SRCROOT)/../nxfw/nxExternalAPI/include/",
+					"$(SRCROOT)/../cegui/CEGUIOpenGLRender/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/macapp/lib",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A061D68B20F49D1700B07859 /* Build configuration list for PBXProject "macapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A061D69520F49D1700B07859 /* Debug */,
+				A061D69620F49D1700B07859 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A061D69720F49D1700B07859 /* Build configuration list for PBXNativeTarget "macapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A061D69820F49D1700B07859 /* Debug */,
+				A061D69920F49D1700B07859 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A061D68820F49D1700B07859 /* Project object */;
+}
