@@ -36,7 +36,7 @@ int main(int argc, char** argv)
     
     glfwSwapInterval(0);
 
-    CEGUIView * target = new CEGUIView(window);
+    CEGUIView::getInstance(window);
     
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))

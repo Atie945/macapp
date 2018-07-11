@@ -6,14 +6,19 @@
 
 class CEGUIView {
 public:
-    CEGUIView(GLFWwindow* Gwindow);
+    static CEGUIView *getInstance(GLFWwindow* Gwindow = NULL);
     void render();
+    
+    NXCEGUISystem *renderSystem;
+    
+    
 private:
+    CEGUIView(GLFWwindow* Gwindow);
     void initRenderSystem();
     void initReceiver();
     
-    NXCEGUISystem *renderSystem;
     GLFWwindow *window;
+    static CEGUIView *_CEGUIView;
 };
 
 #endif

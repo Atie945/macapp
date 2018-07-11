@@ -11,16 +11,16 @@
 
 #include <stdio.h>
 #include <NXEventReceiver.h>
-#include "../CEGUIView.h"
+#include "CEGUI/CEGUI.h"
+#include "GLFW/glfw3.h"
 
 class CEGUIEventReceiver {
 public:
-    void initializeWithView(CEGUIView* view);
+    void initialize();
     void onRenderEvent(void* msg);
     void onMultiTouchEvent(void* msg);
     
 private:
-    CEGUIView* _ceguiView;
     NXEventReceiver* _eventReceiver;
     
 };

@@ -17,6 +17,14 @@
 #include "PreviewLauncher.h"
 #include "AppLayerManager.h"
 
+CEGUIView* CEGUIView::_CEGUIView = NULL;
+CEGUIView *CEGUIView::getInstance(GLFWwindow* Gwindow) {
+    if (_CEGUIView == NULL) {
+        _CEGUIView = new CEGUIView(Gwindow);
+    }
+    return _CEGUIView;
+}
+
 CEGUIView::CEGUIView(GLFWwindow* Gwindow) {
     
     window = Gwindow;
@@ -36,7 +44,7 @@ CEGUIView::CEGUIView(GLFWwindow* Gwindow) {
 
 void CEGUIView::initReceiver() {
 	CEGUIEventReceiver *receiver = new CEGUIEventReceiver();
-	receiver->initializeWithView(this);
+	receiver->initialize();
 }
 
 void CEGUIView::initRenderSystem() {
