@@ -25,6 +25,5 @@ void CEGUIEventReceiver::initialize(){
 }
 
 void CEGUIEventReceiver::onRenderEvent(void* msg) {
-    
     CEGUIView::getInstance()->render();
 }

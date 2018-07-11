@@ -19,13 +19,14 @@
 
 CEGUIView* CEGUIView::_CEGUIView = NULL;
 CEGUIView *CEGUIView::getInstance(GLFWwindow* Gwindow) {
-    if (_CEGUIView == NULL) {
-        _CEGUIView = new CEGUIView(Gwindow);
+    if (_CEGUIView == NULL && Gwindow != NULL) {
+        _CEGUIView = new CEGUIView();
+        _CEGUIView->init(Gwindow);
     }
     return _CEGUIView;
 }
 
-CEGUIView::CEGUIView(GLFWwindow* Gwindow) {
+void CEGUIView::init(GLFWwindow* Gwindow) {
     
     window = Gwindow;
     

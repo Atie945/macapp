@@ -13,7 +13,7 @@ public:
     
     
 private:
-    CEGUIView(GLFWwindow* Gwindow);
+    void init(GLFWwindow* Gwindow);
     void initRenderSystem();
     void initReceiver();
     
