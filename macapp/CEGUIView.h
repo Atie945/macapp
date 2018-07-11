@@ -8,7 +8,9 @@ class CEGUIView {
 public:
     static CEGUIView *getInstance(GLFWwindow* Gwindow = NULL);
     void render();
-    
+    GLFWwindow* getWindow(){
+        return window;
+    }
     NXCEGUISystem *renderSystem;
     
     

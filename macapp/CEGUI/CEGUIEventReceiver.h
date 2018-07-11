@@ -10,6 +10,7 @@
 #define CEGUIEventReceiver_hpp
 
 #include <stdio.h>
+#include "GLFW/glfw3.h"
 #include <NXEventReceiver.h>
 #include "CEGUI/CEGUI.h"
 #include "GLFW/glfw3.h"
@@ -19,9 +20,13 @@ public:
     void initialize();
     void onRenderEvent(void* msg);
     void onMultiTouchEvent(void* msg);
+    static void glfwWindowCloseCallback(GLFWwindow* window);
+    static void glfwWindowResizeCallback(GLFWwindow* window);
     
 private:
     NXEventReceiver* _eventReceiver;
+    
+    
     
 };
 
