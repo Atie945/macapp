@@ -11,7 +11,9 @@ public:
     GLFWwindow* getWindow(){
         return window;
     }
-    NXCEGUISystem *renderSystem;
+    NXCEGUISystem* getRenderSystem() {
+        return renderSystem;
+    }
     
     
 private:
@@ -20,6 +22,7 @@ private:
     void initReceiver();
     
     GLFWwindow *window;
+    NXCEGUISystem *renderSystem;
     static CEGUIView *_CEGUIView;
 };
 

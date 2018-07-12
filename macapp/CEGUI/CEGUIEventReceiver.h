@@ -13,7 +13,6 @@
 #include "GLFW/glfw3.h"
 #include <NXEventReceiver.h>
 #include "CEGUI/CEGUI.h"
-#include "GLFW/glfw3.h"
 
 class CEGUIEventReceiver {
 public:
@@ -22,6 +21,8 @@ public:
     void onMultiTouchEvent(void* msg);
     static void glfwWindowCloseCallback(GLFWwindow* window);
     static void glfwWindowResizeCallback(GLFWwindow* window);
+    static void glfwMouseButtonCallback(GLFWwindow* window, int button, int action, int mods);
+    static void glfwCursorPosCallback(GLFWwindow* window, double xpos, double ypos);
     
 private:
     NXEventReceiver* _eventReceiver;
